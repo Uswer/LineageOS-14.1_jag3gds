@@ -1,0 +1,32 @@
+/data/cam_socket1		u:object_r:camera_socket:s0
+/data/cam_socket2		u:object_r:camera_socket:s0
+
+/data/system/default_values	u:object_r:mpctl_data_file:s0
+
+/dev/pn547			u:object_r:nfc_device:s0
+/dev/rfkill			u:object_r:wpa_device:s0
+
+/persist/sensors/sensors_settings	u:object_r:sensors_persist_file:s0
+/persist-lg(/.*)?			u:object_r:persist_drm_file:s0
+
+/sys/devices/platform/kcal_ctrl.0(/.*)?			u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?		u:object_r:kcal_dev:s0
+/sys/devices/virtual/input/lge_touch/dt2w_enable	u:object_r:lge_touch_sysfs:s0
+/sys/devices/platform/tspdrv/nforce_timed		u:object_r:vibe_dev:s0
+
+/sns(/.*)?			u:object_r:sensors_persist_file:s0
+
+/data/misc/bdaddr		u:object_r:hwaddrs_data_file:s0
+/data/misc/wifi/config		u:object_r:hwaddrs_data_file:s0
+/system/bin/hwaddrs		u:object_r:hwaddrs_exec:s0
+/system/bin/bdaddr_loader	u:object_r:hwaddrs_exec:s0
+
+/data/misc/sensor(/.*)?			u:object_r:sensors_data_file:s0
+
+/system/bin/brcm-uim-sysfs         u:object_r:brcm_uim_exec:s0
+/system/vendor/bin/brcm-uim-sysfs  u:object_r:brcm_uim_exec:s0
+/dev/ttyHS99                       u:object_r:hci_attach_dev:s0
+/dev/brcm_bt_drv                   u:object_r:hci_attach_dev:s0
+
+#Metadata block device
+/dev/block/platform/msm_sdcc\.1/by-name/encrypt u:object_r:metadata_block_device:s0
